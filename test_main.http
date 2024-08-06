@@ -1,0 +1,22 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/v1/users/
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/v1/users/1
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/v1/users/
+Content-Type: application/json
+
+{
+    "email": "john@doe.com",
+    "password": "password"
+}
